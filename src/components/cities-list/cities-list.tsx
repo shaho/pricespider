@@ -13,7 +13,6 @@ import { CityItem } from "../";
 export function CitiesList() {
   const [term, setTerm] = useState("");
   const [cities] = useState(getCities());
-
   const Cities = useMemo(
     () =>
       cities.filter((item: City) =>
@@ -21,7 +20,6 @@ export function CitiesList() {
       ),
     [cities, term],
   );
-
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) =>
     setTerm(e.target.value);
 
@@ -42,7 +40,7 @@ export function CitiesList() {
             innerElementType={List}
             height={400}
             width={"100%"}
-            itemSize={60}
+            itemSize={76}
             itemCount={Cities.length}
             itemData={{
               columns: {},
@@ -54,7 +52,7 @@ export function CitiesList() {
           </FixedSizeList>
         </Box>
       ) : (
-        <Alert severity="warning">There's no matched item.</Alert>
+        <Alert severity="warning">No matching item has been found.</Alert>
       )}
     </>
   );
