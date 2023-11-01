@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="https://www.pricespider.com/">
+    <img
+src="https://theme.zdassets.com/theme_assets/10418180/b0bff0fa45c252efb8af9f999d556706c8ef04ed.png"
+width='140px' />
+  </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Assignment PriceSpider
 
-Currently, two official plugins are available:
+The project is built on [Vite.js](https://vitejs.dev/) integrated with
+TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Quick start
 
-## Expanding the ESLint configuration
+1.  **Development**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+    Clone the repo and just run command below
 
-- Configure the top-level `parserOptions` property like this:
+    ```shell
+    npm i && npm run dev
+    ```
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+2.  **Test**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    ```shell
+    npm test
+    ```
+
+## Dependencies
+
+- [React](https://github.com/facebook/react): A declarative, efficient, and
+  flexible JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/): TypeScript is JavaScript with
+  syntax for types.
+- [Material UI](https://mui.com/material-ui/): Ready to use Material Design
+- [react-window](https://github.com/bvaughn/react-window): React components for
+  efficiently rendering large lists and tabular data
+
+## Dev. Dependencies
+
+- [Vitest](https://vitest.dev/): Blazing Fast Unit Test Framework
+- [Testing Library](https://testing-library.com/): Simple and complete testing
+  utilities that encourage good testing practices
